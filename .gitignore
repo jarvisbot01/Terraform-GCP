@@ -1,0 +1,38 @@
+# Agents
+.agents/
+
+# Archivos de estado local y respaldos de Terraform
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Bloqueos de estado
+.terraform.tfstate.lock.info
+
+# Archivos de variables con datos sensibles o credenciales
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Directorio de trabajo local generado por `terraform init`
+.terraform/
+
+# Registros de depuración y logs de CLI
+crash.log
+crash.*.log
+*.log
+
+# Archivos de planes de Terraform (pueden contener valores sensibles)
+*tfplan
+
+# Archivos de credenciales y claves de GCP (Service Account keys)
+*.json
+!modules/**/config/*.json
+
+# Archivos temporales y de configuración de editores/SO
+.vscode/
+.DS_Store
+Thumbs.db

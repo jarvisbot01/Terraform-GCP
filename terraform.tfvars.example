@@ -1,0 +1,13 @@
+project_id               = "tu-project-id"
+region                   = "us-central1"
+zone                     = "us-central1-a"
+network_name             = "custom-vpc"
+subnet_name              = "custom-subnet"
+subnet_cidr              = "10.0.1.0/24"
+allowed_ssh_cidr         = ["0.0.0.0/0"]
+allowed_http_cidr        = ["0.0.0.0/0"]
+allowed_wireguard_cidr   = ["0.0.0.0/0"]
+instance_name            = "vm-custom-e2-micro"
+machine_type             = "e2-micro"
+ssh_user                 = "tu-usuario"
+ssh_pub_key              = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAA... usuario@correo.com"
